@@ -65,7 +65,7 @@ fun! JsBeautify(...)
 
 
   if (executable(g:jsbeautify_engine))
-    let res = system(g:jsbeautify_engine." ".fnameescape(s:pluginDir."/beautify-min.js")." --js_arguments ".content_path." ".opts." ".path)
+    let res = system(g:jsbeautify_engine." ".fnameescape(s:pluginDir."/beautify.js")." --js_arguments ".content_path." ".opts." ".path)
   else
     echo "Command ".g:jsbeautify_engine." doesn't exist!"
     return
